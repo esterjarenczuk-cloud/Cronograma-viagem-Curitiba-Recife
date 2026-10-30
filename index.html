@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronograma de Viagem: Curitiba - Recife</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js para o gráfico de despesas -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>✈️ Cronograma de Viagem: Curitiba ➔ Recife</h1>
+        <p>Planejamento de despesas e itinerário da viagem</p>
+    </header>
+
+    <main class="container">
+        <!-- Tabela de Despesas -->
+        <section class="card">
+            <h2>📊 Tabela de Despesas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Valor Final</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Passagem de avião</td>
+                        <td>R$ 1.300,00</td>
+                        <td>1</td>
+                        <td>R$ 1.300,00</td>
+                    </tr>
+                    <tr>
+                        <td>Hospedagem</td>
+                        <td>R$ 200,00</td>
+                        <td>5</td>
+                        <td>R$ 1.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>Alimentação</td>
+                        <td>R$ 100,00</td>
+                        <td>5</td>
+                        <td>R$ 500,00</td>
+                    </tr>
+                    <tr>
+                        <td>Transporte</td>
+                        <td>R$ 50,00</td>
+                        <td>3</td>
+                        <td>R$ 150,00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><strong>Total</strong></td>
+                        <td><strong>R$ 2.950,00</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Gráfico das Despesas -->
+        <section class="card">
+            <h2>📈 Gráfico de Gastos por Categoria</h2>
+            <div class="chart-container">
+                <canvas id="despesasChart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto desenvolvido para o GitHub - Viagem Curitiba x Recife</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
